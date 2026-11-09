@@ -1,0 +1,60 @@
+# Only the files the website uses are published. Everything else in this folder
+# (unused photos, duplicate PNGs, videos) stays on this computer and out of GitHub.
+# To publish a new picture, add its path below with a ! in front.
+*
+!*/
+!.gitignore
+!index.html
+!styles.css
+!/Chassis FEA Validation with Strain Gauge Data (3).pdf
+!/EV rear bulkhead fabrication.jpg
+!/EV rear frame jigging.jpg
+!/FEA classwork 1.png
+!/FEA classwork 2.png
+!/FEA classwork 3.png
+!/FEA classwork 4.png
+!/FEA classwork 5.png
+!/FEA classwork 6.png
+!/Photos/About/beach-truck.jpg
+!/Photos/About/headshot.jpg
+!/Photos/About/rappelling.jpg
+!/Photos/About/rock-climbing.jpg
+!/Photos/About/summit.jpg
+!/Photos/FEA validation slides/slide-01.jpg
+!/Photos/FEA validation slides/slide-02.jpg
+!/Photos/FEA validation slides/slide-03.jpg
+!/Photos/FEA validation slides/slide-04.jpg
+!/Photos/FEA validation slides/slide-05.jpg
+!/Photos/FEA validation slides/slide-06.jpg
+!/Photos/FEA validation slides/slide-07.jpg
+!/Photos/FEA validation slides/slide-08.jpg
+!/Photos/FEA validation slides/slide-09.jpg
+!/Photos/FEA validation slides/slide-10.jpg
+!/Photos/FEA validation slides/slide-11.jpg
+!/Photos/FEA validation slides/slide-12.jpg
+!/Photos/FEA validation slides/slide-13.jpg
+!/Photos/FEA validation slides/slide-14.jpg
+!/Photos/FEA validation slides/slide-15.jpg
+!/Photos/FEA validation slides/slide-16.jpg
+!/Photos/FEA validation slides/slide-17.jpg
+!/Photos/FEA validation slides/slide-18.jpg
+!/Photos/Formula/EV CAD w:Batt.png
+!/Photos/Formula/EV CAD.png
+!/Photos/Formula/EV FEA 2.png
+!/Photos/Formula/EV FEA.png
+!/Photos/Formula/IC26 full IRL.jpg
+!/Photos/Formula/Personal 1.jpg
+!/Photos/Formula/Personal 2.jpg
+!/Photos/Formula/SD Box Thermal.png
+!/Photos/Formula/SD Box mesh.png
+!/Photos/Formula/Team reveal.jpg
+!/Photos/Formula/Weld Example 1.jpg
+!/Ricoh 1.jpeg
+!/Ricoh 2.jpeg
+!/Ricoh 3.jpeg
+!/Ricoh 4.jpeg
+!/Ricoh 5.jpeg
+!/Ricoh 7.jpeg
+!/Ricoh 8.jpeg
+!/Ricoh 9.jpeg
+!/full composite box assembly.jpg

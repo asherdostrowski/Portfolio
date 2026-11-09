@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asher Ostrowski | Mechanical Engineer</title>
+  <meta name="description" content="Portfolio of Asher Ostrowski, a mechanical engineer focused on EV and robotics hardware.">
+
+  <!-- Fonts: Archivo for headings, IBM Plex Sans for text, IBM Plex Mono for drawing-style labels. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+
+  <!-- HEADER: name on the left, numbered section links on the right.
+       The link for the section you are reading is underlined in red automatically. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Asher Ostrowski<span class="brand-sub">Mechanical Engineer</span></a>
+      <nav aria-label="Sections">
+        <ol class="nav-list">
+          <li><a href="#projects"><span class="nav-no">01</span>Projects</a></li>
+          <li><a href="#fea"><span class="nav-no">02</span>School FEA</a></li>
+          <li><a href="#about"><span class="nav-no">03</span>About</a></li>
+          <li><a href="#skills"><span class="nav-no">04</span>Skills</a></li>
+          <li><a href="#contact"><span class="nav-no">05</span>Contact</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO: headline and intro on the left; on the right, a "title block" like the one in the corner
+         of an engineering drawing, with the key facts a recruiter scans for. -->
+    <section class="hero">
+      <div class="container hero-sheet">
+        <span class="crop tl" aria-hidden="true"></span><span class="crop tr" aria-hidden="true"></span>
+        <span class="crop bl" aria-hidden="true"></span><span class="crop br" aria-hidden="true"></span>
+
+        <div class="hero-main">
+          <h1>Designing, prototyping, and manufacturing hardware.</h1>
+          <p class="lead">
+            I'm a mechanical engineer with hands-on experience taking hardware from CAD to
+            fabrication to testing. I led a seven-member chassis team on NC State's Formula SAE
+            team and helped launch Ricoh's additive manufacturing center at NC State. I'm looking
+            for an entry-level mechanical engineering role at a company or startup in San Francisco.
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="#projects">View projects <span aria-hidden="true">&darr;</span></a>
+            <a class="button" href="mailto:asherdostrowski@gmail.com">Email me</a>
+            <!-- TODO: once you have your resume as a PDF, put it in this folder as resume.pdf,
+                 then remove the comment markers around the next line.
+            <a class="button" href="resume.pdf">Resume (PDF)</a>
+            -->
+          </div>
+        </div>
+
+        <aside class="title-block" aria-label="Quick facts">
+          <a class="tb-photo" href="Photos/About/headshot.jpg" target="_blank" rel="noopener">
+            <img src="Photos/About/headshot.jpg" alt="Portrait of Asher Ostrowski in a dark suit and tie, leaning against a white column">
+          </a>
+          <dl class="tb-grid">
+            <div class="tb-cell wide"><dt>Name</dt><dd>Asher Ostrowski</dd></div>
+            <div class="tb-cell"><dt>Discipline</dt><dd>Mechanical Eng.</dd></div>
+            <div class="tb-cell"><dt>School</dt><dd>NC State, B.S. 2026 <span class="tb-note">Minor, Forest Management</span></dd></div>
+            <div class="tb-cell wide"><dt>Focus</dt><dd>EV's, Robotics, and Sustainable Hardware</dd></div>
+            <div class="tb-cell wide"><dt>Seeking</dt><dd>Entry-level role, San Francisco</dd></div>
+            <div class="tb-cell wide"><dt>Contact</dt><dd><a href="mailto:asherdostrowski@gmail.com">asherdostrowski@gmail.com</a></dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS
+         HOW TO ADD A PICTURE: put the file in the Photos folder, then add this line inside a gallery-row:
+         <a class="media-link" style="--r: 1.333" href="Photos/your-photo.jpg"><img class="media" src="Photos/your-photo.jpg" alt="Describe what the picture shows" loading="lazy"></a>
+         --r is the picture's width divided by its height (landscape photo 1.333, upright phone photo 0.75,
+         wide plot about 2). Every picture in a row is shown at the same height and the row fills the width.
+         The alt text is also used as the picture's caption when someone clicks it open.
+         Figure numbers (FIG 1.1, 1.2, ...) are added automatically; data-fig on each gallery sets the first number. -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="sec-no">01</span>
+          <h2>Projects</h2>
+          <span class="sec-note">4 projects &middot; 2022&ndash;2026</span>
+        </div>
+
+        <!-- Project index: a quick list that jumps to each project. -->
+        <ol class="project-index">
+          <li><a href="#p1"><span class="pi-no">P-01</span><span class="pi-name">Formula SAE chassis lead</span><span class="pi-org">Pack Motorsports</span></a></li>
+          <li><a href="#p2"><span class="pi-no">P-02</span><span class="pi-name">FEA validation using strain-gauge data</span><span class="pi-org">NC State / FSAE</span></a></li>
+          <li><a href="#p3"><span class="pi-no">P-03</span><span class="pi-name">Composite EV battery enclosure</span><span class="pi-org">Senior Design</span></a></li>
+          <li><a href="#p4"><span class="pi-no">P-04</span><span class="pi-name">Additive manufacturing internship</span><span class="pi-org">Ricoh</span></a></li>
+        </ol>
+
+        <article class="project" id="p1">
+          <header class="project-head">
+            <span class="part-no">P-01</span>
+            <h3>Formula SAE chassis lead</h3>
+            <dl class="spec">
+              <div><dt>Organization</dt><dd>NC State Pack Motorsports</dd></div>
+              <div><dt>Dates</dt><dd>Oct 2022 &ndash; Jul 2026</dd></div>
+              <div><dt>Role</dt><dd>Chassis Engineering Lead</dd></div>
+            </dl>
+          </header>
+          <dl class="brief">
+            <div><dt>Problem</dt><dd>Develop both an electric and an internal-combustion competition chassis in a single season, while the team transitioned to EVs.</dd></div>
+            <div><dt>Role</dt><dd>Chassis Engineering Lead in 2025-2026. I led a seven-member team through design, fabrication, integration, and testing, while spending 40+ hours a week on it as a full-time student. Before the promotion, I designed and manufactured chassis components across five vehicle builds over three years, using CAD, machining, assembly, and TIG welding.</dd></div>
+            <div><dt>Process</dt><dd>I managed chassis requirements, structural analysis, and design reviews, and coordinated the interfaces with suspension, drivetrain, electrical, and high-voltage systems. I also improved the team's processes, resource allocation, manufacturing procedures, and technical documentation to meet deadlines and support future builds.</dd></div>
+            <!-- TODO: add a Result row with competition results, chassis weight, or stiffness numbers. -->
+          </dl>
+          <div class="gallery" data-fig="1">
+            <div class="gallery-row">
+              <a class="media-link" style="--r: 1.760" href="Photos/Formula/EV%20CAD.png"><img class="media" src="Photos/Formula/EV%20CAD.png" alt="CAD model of the Formula SAE space-frame chassis with color-coded tubes" loading="lazy"></a>
+              <a class="media-link" style="--r: 1.287" href="Photos/Formula/EV%20CAD%20w%3ABatt.png"><img class="media" src="Photos/Formula/EV%20CAD%20w%3ABatt.png" alt="CAD assembly of the electric chassis with its battery box and components mounted in the frame" loading="lazy"></a>
+            </div>
+            <div class="gallery-row">
+              <a class="media-link" style="--r: 1.544" href="Photos/Formula/EV%20FEA%202.png"><img class="media" src="Photos/Formula/EV%20FEA%202.png" alt="Ansys static structural setup for the chassis, showing a fixed support, a 120 lbf remote force, and two remote displacements" loading="lazy"></a>
+              <a class="media-link" style="--r: 2.054" href="Photos/Formula/EV%20FEA.png"><img class="media" src="Photos/Formula/EV%20FEA.png" alt="Ansys total deformation plot of the chassis under load, with a maximum deformation of 0.2107 inches" loading="lazy"></a>
+            </div>
+            <div class="gallery-row">
+              <a class="media-link" style="--r: 1.432" href="Photos/Formula/SD%20Box%20mesh.png"><img class="media" src="Photos/Formula/SD%20Box%20mesh.png" alt="Finite element mesh of the battery enclosure, including its internal dividers" loading="lazy"></a>
+              <a class="media-link" style="--r: 2.036" href="Photos/Formula/SD%20Box%20Thermal.png"><img class="media" src="Photos/Formula/SD%20Box%20Thermal.png" alt="Ansys steady-state thermal plot of the battery enclosure, with temperatures from about 7.6 to 57.2 degrees Celsius" loading="lazy"></a>
+            </div>
+            <div class="gallery-row">
+              <a class="media-link" style="--r: 0.75" href="EV%20rear%20frame%20jigging.jpg"><img class="media" src="EV%20rear%20frame%20jigging.jpg" alt="Rear section of the Formula SAE chassis positioned in a fabrication jig" loading="lazy"></a>
+              <a class="media-link" style="--r: 0.75" href="EV%20rear%20bulkhead%20fabrication.jpg"><img class="media" src="EV%20rear%20bulkhead%20fabrication.jpg" alt="Welded Formula SAE rear bulkhead being fabricated in a fixture" loading="lazy"></a>
+              <a class="media-link" style="--r: 0.75" href="Photos/Formula/Weld%20Example%201.jpg"><img class="media" src="Photos/Formula/Weld%20Example%201.jpg" alt="Example of Formula SAE chassis fabrication and welding" loading="lazy"></a>
+            </div>
+            <div class="gallery-row">
+              <a class="media-link" style="--r: 1.333" href="Photos/Formula/IC26%20full%20IRL.jpg"><img class="media" src="Photos/Formula/IC26%20full%20IRL.jpg" alt="Formula SAE internal-combustion car" loading="lazy"></a>
+              <a class="media-link" style="--r: 1.333" href="Photos/Formula/Team%20reveal.jpg"><img class="media" src="Photos/Formula/Team%20reveal.jpg" alt="Formula SAE team at a car reveal" loading="lazy"></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" id="p2">
+          <header class="project-head">
+            <span class="part-no">P-02</span>
+            <h3>FEA validation using strain-gauge data</h3>
+            <dl class="spec">
+              <div><dt>Organization</dt><dd>NC State University / Formula SAE</dd></div>
+              <div><dt>Recognition</dt><dd>2nd place, Cummins Innovation Award (FSAE Electric)</dd></div>
+            </dl>
+          </header>
+          <dl class="brief">
+            <div><dt>Problem</dt><dd>Compare finite element analysis (FEA) predictions for the chassis against physical strain-gauge measurements.</dd></div>
+            <div><dt>Role</dt><dd>I designed and fabricated a custom chassis test rig, and oversaw development of a PCB-amplifier system that collected and logged strain-gauge data from the vehicle chassis during on-track testing.</dd></div>
+            <div><dt>Process</dt><dd>I analyzed the simulation and test results to evaluate how accurate the model was.</dd></div>
+            <!-- TODO: add how closely the FEA matched the measured data. -->
+          </dl>
+          <!-- SLIDESHOW: each PDF page is an image in "Photos/FEA validation slides". Set data-count to the number of slides. -->
+          <div class="slideshow" data-folder="Photos/FEA%20validation%20slides" data-count="18" tabindex="0" aria-label="FEA validation slideshow. Use the left and right arrow keys to change slides.">
+            <div class="slide-frame">
+              <div class="slide-stage">
+                <a class="slide-link" href="Photos/FEA%20validation%20slides/slide-01.jpg" target="_blank" rel="noopener">
+                  <img class="slide-image" src="Photos/FEA%20validation%20slides/slide-01.jpg" alt="FEA validation slideshow, slide 1 of 18" loading="lazy">
+                </a>
+              </div>
+              <div class="slide-bar">
+                <button class="slide-nav prev" type="button" aria-label="Previous slide">&larr; Prev</button>
+                <div class="slide-progress" aria-hidden="true"><span></span></div>
+                <p class="slide-counter" aria-live="polite">01 / 18</p>
+                <button class="slide-nav next" type="button" aria-label="Next slide">Next &rarr;</button>
+              </div>
+            </div>
+            <p class="slide-download"><a href="Chassis%20FEA%20Validation%20with%20Strain%20Gauge%20Data%20(3).pdf" target="_blank" rel="noopener">Download the full slideshow (PDF, 5 MB)</a></p>
+          </div>
+        </article>
+
+        <article class="project" id="p3">
+          <header class="project-head">
+            <span class="part-no">P-03</span>
+            <h3>Composite EV battery enclosure</h3>
+            <dl class="spec">
+              <div><dt>Program</dt><dd>Senior Design</dd></div>
+              <div><dt>School</dt><dd>NC State University</dd></div>
+            </dl>
+          </header>
+          <dl class="brief">
+            <div><dt>Problem</dt><dd>Design a lightweight composite enclosure for an EV battery.</dd></div>
+            <div><dt>Role</dt><dd>I worked in a team of five to develop and manufacture an original design for our senior design project. We built a composite battery enclosure for the Pack Motorsports FSAE Electric car. My main responsibilities were manufacturing design and composite FEA.</dd></div>
+            <div><dt>Process</dt><dd>We optimized the design to reduce weight while still meeting structural strength, fire resistance, and battery safety requirements.</dd></div>
+            <!-- TODO: add weight saved and test results. -->
+          </dl>
+          <div class="gallery" data-fig="3">
+            <div class="gallery-row">
+              <a class="media-link" style="--r: 1.432" href="Photos/Formula/SD%20Box%20mesh.png"><img class="media" src="Photos/Formula/SD%20Box%20mesh.png" alt="Finite element mesh of the battery enclosure, including its internal dividers" loading="lazy"></a>
+              <a class="media-link" style="--r: 0.75" href="full%20composite%20box%20assembly.jpg"><img class="media" src="full%20composite%20box%20assembly.jpg" alt="Completed composite battery enclosure assembly" loading="lazy"></a>
+              <a class="media-link" style="--r: 2.036" href="Photos/Formula/SD%20Box%20Thermal.png"><img class="media" src="Photos/Formula/SD%20Box%20Thermal.png" alt="Ansys steady-state thermal plot of the battery enclosure, with temperatures from about 7.6 to 57.2 degrees Celsius" loading="lazy"></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" id="p4">
+          <header class="project-head">
+            <span class="part-no">P-04</span>
+            <h3>Additive manufacturing internship</h3>
+            <dl class="spec">
+              <div><dt>Organization</dt><dd>Ricoh Center for Additive Manufacturing</dd></div>
+              <div><dt>Dates</dt><dd>Jul 2024 &ndash; Aug 2025</dd></div>
+            </dl>
+          </header>
+          <dl class="brief">
+            <div><dt>Problem</dt><dd>Help set up day-to-day engineering and production at Ricoh's new Additive Manufacturing Center of Excellence at NC State.</dd></div>
+            <div><dt>Role</dt><dd>I was one of the first interns hired there. I coordinated equipment, materials, and manufacturing processes to take advanced 3D printing projects from design through production, working across engineering teams to turn concepts into manufacturable solutions.</dd></div>
+            <div><dt>Process</dt><dd>I refined manufacturing processes, established and wrote documentation for safety procedures, and researched new additive manufacturing applications, including metal additive manufacturing.</dd></div>
+            <!-- TODO: add parts or projects shipped and any measurable improvement. -->
+          </dl>
+          <div class="gallery" data-fig="4">
+            <div class="gallery-row">
+              <a class="media-link" style="--r: 0.75" href="Ricoh%201.jpeg"><img class="media" src="Ricoh%201.jpeg" alt="Additive manufacturing prototype displayed at the Ricoh Center" loading="lazy"></a>
+              <a class="media-link" style="--r: 0.75" href="Ricoh%202.jpeg"><img class="media" src="Ricoh%202.jpeg" alt="Additively manufactured prototype component" loading="lazy"></a>
+              <a class="media-link" style="--r: 0.75" href="Ricoh%203.jpeg"><img class="media" src="Ricoh%203.jpeg" alt="3D printed prototype parts" loading="lazy"></a>
+              <a class="media-link" style="--r: 0.75" href="Ricoh%204.jpeg"><img class="media" src="Ricoh%204.jpeg" alt="Ricoh additive manufacturing workspace and equipment" loading="lazy"></a>
+            </div>
+            <div class="gallery-row">
+              <a class="media-link" style="--r: 0.75" href="Ricoh%205.jpeg"><img class="media" src="Ricoh%205.jpeg" alt="Additive manufacturing build in progress" loading="lazy"></a>
+              <a class="media-link" style="--r: 0.75" href="Ricoh%207.jpeg"><img class="media" src="Ricoh%207.jpeg" alt="Additively manufactured prototype component" loading="lazy"></a>
+              <a class="media-link" style="--r: 0.75" href="Ricoh%208.jpeg"><img class="media" src="Ricoh%208.jpeg" alt="Additive manufacturing prototype" loading="lazy"></a>
+              <a class="media-link" style="--r: 0.75" href="Ricoh%209.jpeg"><img class="media" src="Ricoh%209.jpeg" alt="Additive manufacturing prototype" loading="lazy"></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SCHOOL FEA PROJECTS -->
+    <section id="fea" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="sec-no">02</span>
+          <h2>School FEA projects</h2>
+          <span class="sec-note">Ansys coursework &middot; NC State</span>
+        </div>
+        <p class="lead">Finite element analysis work from my mechanical engineering coursework at NC State.</p>
+        <!-- TODO: add each project's name, the software used, the loads and constraints, and the key result. -->
+        <div class="gallery" data-fig="5">
+          <div class="gallery-row">
+            <a class="media-link" style="--r: 1.390" href="FEA%20classwork%201.png"><img class="media" src="FEA%20classwork%201.png" alt="Transient thermal analysis showing temperature distribution and results over time" loading="lazy"></a>
+            <a class="media-link" style="--r: 1.507" href="FEA%20classwork%202.png"><img class="media" src="FEA%20classwork%202.png" alt="Static structural total deformation results for a meshed component" loading="lazy"></a>
+            <a class="media-link" style="--r: 1.390" href="FEA%20classwork%204.png"><img class="media" src="FEA%20classwork%204.png" alt="Total deformation analysis of a circular component with radial fins" loading="lazy"></a>
+            <a class="media-link" style="--r: 1.217" href="FEA%20classwork%205.png"><img class="media" src="FEA%20classwork%205.png" alt="Parametric response plot of equivalent stress against rotational velocity and fin height" loading="lazy"></a>
+          </div>
+          <div class="gallery-row">
+            <a class="media-link" style="--r: 2.070" href="FEA%20classwork%203.png"><img class="media" src="FEA%20classwork%203.png" alt="Equivalent von Mises stress analysis of a structural bracket" loading="lazy"></a>
+            <a class="media-link" style="--r: 2.077" href="FEA%20classwork%206.png"><img class="media" src="FEA%20classwork%206.png" alt="Modal analysis showing the fifth mode shape and total deformation" loading="lazy"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="sec-no">03</span>
+          <h2>About me</h2>
+          <span class="sec-note">NC State &middot; Class of 2026</span>
+        </div>
+        <div class="about-intro">
+          <p class="lead">I’m drawn to work where ideas become useful things you can build, test, and improve. That curiosity took me from high-school robotics to mechanical engineering at NC State, where I paired my engineering studies with a minor in Forest Management. I enjoy solving hands-on problems with a team, especially in robotics, electric vehicles, and hardware development.</p>
+          <p>My interest in engineering goes hand in hand with caring about the places and resources our work affects. Spending a summer on conservation and trail projects in Colorado gave me a direct appreciation for the effort it takes to care for public lands. I want to keep that perspective in my engineering work: make thoughtful design choices, use materials and energy responsibly, and build solutions that are useful over the long term.</p>
+        </div>
+
+        <div class="gallery" data-fig="6">
+          <div class="gallery-row">
+            <a class="media-link" style="--r: 1.333" href="Photos/Formula/Personal%201.jpg"><img class="media" src="Photos/Formula/Personal%201.jpg" alt="Graduation photo in a red NC State gown, seated beside the Formula SAE car" loading="lazy"></a>
+            <a class="media-link" style="--r: 1.333" href="Photos/Formula/Personal%202.jpg"><img class="media" src="Photos/Formula/Personal%202.jpg" alt="Kneeling beside Formula SAE car number 89 at an event" loading="lazy"></a>
+          </div>
+          <div class="gallery-row">
+            <a class="media-link" style="--r: 0.75" href="Photos/About/rappelling.jpg"><img class="media" src="Photos/About/rappelling.jpg" alt="Rappelling down a boulder field beside a waterfall" loading="lazy"></a>
+            <a class="media-link" style="--r: 1.333" href="Photos/About/summit.jpg"><img class="media" src="Photos/About/summit.jpg" alt="Holding an NC State flag on a snowy Colorado mountain summit" loading="lazy"></a>
+            <a class="media-link" style="--r: 0.75" href="Photos/About/rock-climbing.jpg"><img class="media" src="Photos/About/rock-climbing.jpg" alt="Rock climbing a granite cliff surrounded by pine trees" loading="lazy"></a>
+            <a class="media-link" style="--r: 0.75" href="Photos/About/beach-truck.jpg"><img class="media" src="Photos/About/beach-truck.jpg" alt="Standing on the roof rack of a pickup truck parked on the beach at sunset" loading="lazy"></a>
+          </div>
+        </div>
+
+        <!-- Written like the numbered NOTES block on an engineering drawing. -->
+        <div class="notes">
+          <h3 class="notes-title">Notes: what has shaped my approach</h3>
+          <ol class="notes-list">
+            <li>
+              <h4>Learning by building</h4>
+              <p>At NC State, I studied mechanical engineering and completed a minor in Forest Management. I’ve found that I learn best by moving between analysis and hands-on work—asking questions, trying an approach, and using what happens to make the next version better.</p>
+            </li>
+            <li>
+              <h4>Time in the field</h4>
+              <p class="meta">Rocky Mountain Conservancy &middot; Boulder, Colorado &middot; Summer 2023</p>
+              <p>With AmeriCorps, I joined National Park Service and U.S. Forest Service crews on conservation and trail work. Weeks in the backcountry—planning routes, improving drainage, restoring trails, and working with specialized tools—taught me to respect the environment, work carefully with limited resources, and rely on the people around me.</p>
+            </li>
+            <li>
+              <h4>Staying connected to student engineering</h4>
+              <p>After competing in Formula SAE, I returned as an alumni structural design reviewer. It’s rewarding to help student teams think critically about their designs, engineering evidence, and safety.</p>
+            </li>
+            <li>
+              <h4>Where it started</h4>
+              <p>FIRST Robotics was my first experience turning a rough idea into a working machine. I spent four years with Team SPORK #3196, taking on mechanical, project-planning, and driving roles. That mix of building and teamwork is still a big part of what I enjoy about engineering.</p>
+            </li>
+            <li>
+              <h4>Thinking beyond the design</h4>
+              <p>Through NC State’s Albright Entrepreneurs Village, I’ve also explored how engineering ideas move toward real products. It’s helped me think about not only whether something works, but who it serves and how it can be made practical.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS: laid out like a bill of materials. -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="sec-no">04</span>
+          <h2>Skills</h2>
+          <span class="sec-note">Bill of materials</span>
+        </div>
+        <div class="bom-wrap">
+          <table class="bom">
+            <thead>
+              <tr><th scope="col">Item</th><th scope="col">Group</th><th scope="col">Details</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>01</td><th scope="row">Design and engineering</th><td>CAD (Solidworks, Fusion, Autodesk, etc.), MATLAB, mechanical design, FEA (Ansys Mechanical), structural analysis, vehicle systems</td></tr>
+              <tr><td>02</td><th scope="row">Manufacturing and fabrication</th><td>TIG welding, machining, prototyping, tooling, assembly</td></tr>
+              <tr><td>03</td><th scope="row">Additive manufacturing</th><td>FDM, SLA, SLS, production workflows, process development</td></tr>
+              <tr><td>04</td><th scope="row">EV and robotics</th><td>EV systems, robotics, hardware development, subsystem integration, testing</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="sec-no">05</span>
+          <h2>Contact</h2>
+          <span class="sec-note">Open to roles in San Francisco</span>
+        </div>
+        <p class="lead">I'm looking for an entry-level mechanical engineering role in San Francisco. The best way to reach me is email.</p>
+        <div class="contact-card">
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <a class="contact-value" href="mailto:asherdostrowski@gmail.com">asherdostrowski@gmail.com</a>
+            <button class="copy-button" type="button" data-copy="asherdostrowski@gmail.com">Copy</button>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">LinkedIn</span>
+            <a class="contact-value" href="https://www.linkedin.com/in/asher-ostrowski">linkedin.com/in/asher-ostrowski</a>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Asher Ostrowski</span>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- IMAGE VIEWER: opens when a picture is clicked. Uses the picture's alt text as its caption. -->
+  <dialog class="lightbox" aria-label="Image viewer">
+    <figure class="lb-figure">
+      <img class="lb-image" src="" alt="">
+      <figcaption class="lb-caption">
+        <span class="lb-fig"></span>
+        <span class="lb-text"></span>
+        <span class="lb-count"></span>
+      </figcaption>
+    </figure>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous image">&larr;</button>
+    <button class="lb-btn lb-next" type="button" aria-label="Next image">&rarr;</button>
+    <button class="lb-btn lb-close" type="button" aria-label="Close image viewer">Close &times;</button>
+  </dialog>
+
+  <script>
+    /* ---------- SLIDESHOW: arrow buttons and arrow keys change slides ---------- */
+    document.querySelectorAll('.slideshow').forEach(function (show) {
+      var folder = show.dataset.folder;
+      var count = parseInt(show.dataset.count, 10);
+      var image = show.querySelector('.slide-image');
+      var link = show.querySelector('.slide-link');
+      var counter = show.querySelector('.slide-counter');
+      var bar = show.querySelector('.slide-progress span');
+      var current = 1;
+      var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+
+      function go(n) {
+        current = (n - 1 + count) % count + 1;
+        var src = folder + '/slide-' + pad(current) + '.jpg';
+        image.src = src;
+        link.href = src;
+        image.alt = 'FEA validation slideshow, slide ' + current + ' of ' + count;
+        counter.textContent = pad(current) + ' / ' + count;
+        bar.style.width = (current / count * 100) + '%';
+      }
+
+      show.querySelector('.prev').addEventListener('click', function () { go(current - 1); });
+      show.querySelector('.next').addEventListener('click', function () { go(current + 1); });
+      show.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') { go(current - 1); e.preventDefault(); }
+        if (e.key === 'ArrowRight') { go(current + 1); e.preventDefault(); }
+      });
+      go(1);
+    });
+
+    /* ---------- IMAGE VIEWER: click a picture to see it large, with its figure number and caption ---------- */
+    (function () {
+      var box = document.querySelector('.lightbox');
+      if (!box || typeof box.showModal !== 'function') return;   // very old browsers just open the picture
+      var img = box.querySelector('.lb-image');
+      var fig = box.querySelector('.lb-fig');
+      var text = box.querySelector('.lb-text');
+      var count = box.querySelector('.lb-count');
+      var items = [], index = 0, prefix = '';
+
+      function show(i) {
+        index = (i + items.length) % items.length;
+        var link = items[index], pic = link.querySelector('img');
+        img.src = link.getAttribute('href');
+        img.alt = pic.alt;
+        fig.textContent = 'FIG ' + prefix + '.' + (index + 1);
+        text.textContent = pic.alt;
+        count.textContent = (index + 1) + ' / ' + items.length;
+      }
+
+      document.querySelectorAll('.gallery').forEach(function (gallery) {
+        var links = Array.prototype.slice.call(gallery.querySelectorAll('.media-link'));
+        links.forEach(function (link, i) {
+          link.addEventListener('click', function (e) {
+            if (e.metaKey || e.ctrlKey || e.shiftKey) return;     // let people open a new tab on purpose
+            e.preventDefault();
+            items = links; prefix = gallery.dataset.fig || '';
+            show(i);
+            box.showModal();
+          });
+        });
+      });
+
+      box.querySelector('.lb-prev').addEventListener('click', function () { show(index - 1); });
+      box.querySelector('.lb-next').addEventListener('click', function () { show(index + 1); });
+      box.querySelector('.lb-close').addEventListener('click', function () { box.close(); });
+      box.addEventListener('click', function (e) { if (e.target === box) box.close(); });   // click outside closes
+      box.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') show(index - 1);
+        if (e.key === 'ArrowRight') show(index + 1);
+      });
+      box.addEventListener('close', function () { img.src = ''; });
+    })();
+
+    /* ---------- NAV: underline the section currently on screen ---------- */
+    (function () {
+      var links = {};
+      document.querySelectorAll('.nav-list a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+      if (!('IntersectionObserver' in window)) return;
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          Object.keys(links).forEach(function (id) { links[id].removeAttribute('aria-current'); });
+          if (links[entry.target.id]) links[entry.target.id].setAttribute('aria-current', 'true');
+        });
+      }, { rootMargin: '-40% 0px -55% 0px' });
+      Object.keys(links).forEach(function (id) {
+        var section = document.getElementById(id);
+        if (section) observer.observe(section);
+      });
+    })();
+
+    /* ---------- COPY EMAIL BUTTON ---------- */
+    document.querySelectorAll('.copy-button').forEach(function (button) {
+      button.addEventListener('click', function () {
+        var done = function () {
+          button.textContent = 'Copied';
+          button.classList.add('copied');
+          setTimeout(function () { button.textContent = 'Copy'; button.classList.remove('copied'); }, 1800);
+        };
+        if (navigator.clipboard) navigator.clipboard.writeText(button.dataset.copy).then(done, function () {});
+      });
+    });
+  </script>
+</body>
+</html>
