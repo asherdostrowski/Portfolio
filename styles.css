@@ -110,8 +110,7 @@ p { margin: 0 0 1em; }
   font-stretch: 112%;
   font-size: 1.15rem;
   line-height: 1.05;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   text-decoration: none;
 }
 
@@ -191,8 +190,7 @@ p { margin: 0 0 1em; }
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--red);
   margin-bottom: 1.25rem;
 }
@@ -203,7 +201,6 @@ h1 {
   font-stretch: 78%;              /* condensed, like stamped lettering */
   line-height: 0.98;
   letter-spacing: -0.015em;
-  text-transform: uppercase;
   margin-bottom: 1.5rem;
   text-wrap: balance;
 }
@@ -231,8 +228,7 @@ h1 {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   text-decoration: none;
   color: var(--ink);
   box-shadow: 3px 3px 0 var(--ink);           /* a hard offset shadow instead of a soft glow */
@@ -298,8 +294,7 @@ h1 {
 .tb-cell dt {
   font-family: var(--font-mono);
   font-size: 0.64rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--graphite);
 }
 
@@ -369,15 +364,13 @@ h1 {
   font-size: clamp(2rem, 4.2vw, 2.9rem);
   font-weight: 800;
   font-stretch: 82%;
-  text-transform: uppercase;
 }
 
 .sec-note {
   margin-left: auto;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--graphite);
 }
 
@@ -421,8 +414,7 @@ h1 {
 .pi-org {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--graphite);
 }
 
@@ -481,8 +473,7 @@ h1 {
 .spec dt {
   font-family: var(--font-mono);
   font-size: 0.64rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--graphite);
 }
 
@@ -513,8 +504,7 @@ h1 {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--red);
   padding-top: 0.2rem;
 }
@@ -627,8 +617,7 @@ h1 {
   color: var(--paper);
   font-family: var(--font-mono);
   font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   cursor: pointer;
   transition: background-color 120ms ease, border-color 120ms ease;
 }
@@ -684,8 +673,7 @@ h1 {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   margin-bottom: 1.5rem;
 }
 
@@ -760,8 +748,7 @@ h1 {
   font-family: var(--font-mono);
   font-size: 0.7rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   background: var(--ink);
   color: var(--paper);
   border-bottom: 0;
@@ -806,8 +793,7 @@ h1 {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--graphite);
 }
 
@@ -825,8 +811,7 @@ h1 {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   cursor: pointer;
   color: var(--ink);
 }
@@ -841,8 +826,7 @@ h1 {
   color: var(--paper);
   font-family: var(--font-mono);
   font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 .footer-inner {
@@ -908,8 +892,7 @@ h1 {
   color: var(--paper);
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   cursor: pointer;
   padding: 0.45rem 0.75rem;
 }
